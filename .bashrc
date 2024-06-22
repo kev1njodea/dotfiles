@@ -120,4 +120,4 @@ fi
 eval "$(starship init bash)"
 
 # dotfiles version control
-alias dotfiles='/usr/bin/git --git-dir=/home/odeak/.dotfiles/ --work-tree=/home/odeak'
+alias dotfiles='git --git-dir=/home/odeak/.dotfiles/ --work-tree=/home/odeak'
