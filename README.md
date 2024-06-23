@@ -1,5 +1,7 @@
 # kev1njodea/dotfiles
 
+![bash prompt](.config/screenshots/bash.png)
+
 Version control for my Linux configuration files using a bare Git repository.
 
 ## How-To
@@ -68,5 +70,28 @@ Version control for my Linux configuration files using a bare Git repository.
      dotfiles commit -m "New alias"
      dotfiles push
      ```
+
+</details>
+
+- <details>
+  <summary><b>Starship setup</b></summary>
+
+   1. [Guide](https://starship.rs/guide) / [Config](https://starship.rs/config)
+
+      ```sh
+      curl -sS https://starship.rs/install.sh | sh
+
+      echo 'eval "$(starship init bash)"' >> ~/.bashrc
+
+      mkdir -p ~/.config && touch ~/.config/starship.toml
+      ```
+
+   2. [Theme - Gruvbox Rainbow](https://starship.rs/presets/gruvbox-rainbow)
+
+      ```sh
+      nano ~/.config/starship.toml
+      ```
+
+      Paste in configuration, save, open new shell
 
 </details>
