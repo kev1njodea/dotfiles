@@ -2,8 +2,10 @@
 
 Version control for my Linux configuration files using a bare Git repository.
 
+## How-To
+
 - <details>
-  <summary><b>How-To</b></summary>
+  <summary><b>Initial commit</b></summary>
 
   ## Setup Bare Git Repository for Public Repo
 
@@ -22,7 +24,7 @@ Version control for my Linux configuration files using a bare Git repository.
   3. **Add the alias to your shell configuration:**
 
      ```sh
-     echo "alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.  bashrc
+     echo "alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
      ```
 
   4. **Exclude the `.dotfiles` directory from being tracked:**
@@ -53,7 +55,12 @@ Version control for my Linux configuration files using a bare Git repository.
      dotfiles push -u origin main
      ```
 
-  8. **Subsequent commits**
+</details>
+
+- <details>
+  <summary><b>Following commits</b></summary>
+
+  1. **Example**
 
      ```sh
      dotfiles status
@@ -61,4 +68,5 @@ Version control for my Linux configuration files using a bare Git repository.
      dotfiles commit -m "New alias"
      dotfiles push
      ```
+
 </details>
